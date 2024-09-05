@@ -2,8 +2,7 @@ project:
   type: book
 
 book:
-  title: "quarto_git_test"
-  author: "Norah Jones"
+  title: "Data Analysis for Food Science"
   date: "5.9.2024"
   chapters:
     - index.qmd
@@ -15,9 +14,14 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: default
   pdf:
     documentclass: scrreprt
+    grid: 
+      sidebar-width: 350px # Max width of left sidebar (standard is 250px)
+      body-width: 1000px # Max width of body (standard is 800px)
+      margin-width: 300px # Max width of right sidebar (standard is 250px)
+      gutter-width: 4em #Max width of space between grid components (standard is 1.5em)
 
 
 

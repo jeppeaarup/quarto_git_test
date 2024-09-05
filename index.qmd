@@ -15,5 +15,5 @@ These notes are thought to cover data analysis within food science. That is to; 
 The book material used in these notes are mostly from the notes for the course; Introduction to Statistics at DTU by P.B. Brockhoff and co workers. Additionally there are relevant chapters from other sources. All exercises are custom made and deal with real problems within food science. Welcome to the course in Fødevaredataanalyse for second year bachelor students in Food Science and Technology - Hope you will enjoy learning about how to use data for getting insight on food systems. 
 
 
-Morten Arendt Vils Rasmussen
+Morten Arendt Vils Rasmussen  
 August 2024 

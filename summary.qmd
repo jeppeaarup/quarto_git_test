@@ -1,7 +1,23 @@
 # Summary
 
+```{r}
+#| label: summary_setup
+#| echo: false
+#| message: false
+#| warning: false
+
+library(ggplot2)
+
+```
+
 In summary, this book has no content whatsoever.
 
 ```{r}
-1 + 1
+ggplot(data = iris,
+       aes(x = Sepal.Length, 
+           y = Sepal.Width,
+           color = Species)) +
+  geom_point() +
+  stat_smooth(method = lm, 
+              se = F)
 ```

@@ -17,7 +17,15 @@ See @knuth84 for additional discussion of literate programming.
 This is a test
 
 ```{r}
+#| message: false
+
+set.seed(4321)
+
 x <- rnorm(100)
+
 ggplot() +
-  geom_histogram(aes(x), colour = "steelblue")
+  geom_histogram(aes(x), 
+                 colour = "white",
+                 fill = "steelblue") +
+  theme_bw()
 ```

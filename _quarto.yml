@@ -18,7 +18,8 @@ execute:
   echo: true          # Show code by default
   warning: false      # Suppress warnings
   error: false        # Suppress errors
-  fig-align: center   # Center figures by default
+  message: false # Suppress message
+  fig-align: "center"   # Center figures by default
 
 # Global format options
 

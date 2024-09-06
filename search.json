@@ -24,7 +24,7 @@
     "href": "summary.html",
     "title": "2  Summary",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n\nCode\nggplot(data = iris,\n       aes(x = Sepal.Length, \n           y = Sepal.Width,\n           color = Species)) +\n  geom_point() +\n  stat_smooth(method = lm, \n              se = F)\n\n\n`geom_smooth()` using formula = 'y ~ x'",
+    "text": "In summary, this book has no content whatsoever.\n\n\nCode\nggplot(data = iris,\n       aes(x = Sepal.Length, \n           y = Sepal.Width,\n           color = Species)) +\n  geom_point() +\n  stat_smooth(method = lm, \n              se = F)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
     ]

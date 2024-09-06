@@ -737,32 +737,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb2-5"><a href="#cb2-5"></a><span class="in">```{r}</span></span>
 <span id="cb2-6"><a href="#cb2-6"></a><span class="co">#| label: intro_setup</span></span>
 <span id="cb2-7"><a href="#cb2-7"></a><span class="co">#| echo: false</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#| message: false</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#| warning: false</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb2-10"><a href="#cb2-10"></a></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="in">```</span></span>
 <span id="cb2-12"><a href="#cb2-12"></a></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="in">```</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a>This is a book created from markdown and executable code.</span>
 <span id="cb2-14"><a href="#cb2-14"></a></span>
-<span id="cb2-15"><a href="#cb2-15"></a>This is a book created from markdown and executable code.</span>
+<span id="cb2-15"><a href="#cb2-15"></a>See @knuth84 for additional discussion of literate programming.</span>
 <span id="cb2-16"><a href="#cb2-16"></a></span>
-<span id="cb2-17"><a href="#cb2-17"></a>See @knuth84 for additional discussion of literate programming.</span>
+<span id="cb2-17"><a href="#cb2-17"></a>This is a test</span>
 <span id="cb2-18"><a href="#cb2-18"></a></span>
-<span id="cb2-19"><a href="#cb2-19"></a>This is a test</span>
-<span id="cb2-20"><a href="#cb2-20"></a></span>
-<span id="cb2-23"><a href="#cb2-23"></a><span class="in">```{r}</span></span>
-<span id="cb2-24"><a href="#cb2-24"></a><span class="co">#| message: false</span></span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="in">```{r}</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a><span class="fu">set.seed</span>(<span class="dv">4321</span>)</span>
+<span id="cb2-23"><a href="#cb2-23"></a></span>
+<span id="cb2-24"><a href="#cb2-24"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
 <span id="cb2-25"><a href="#cb2-25"></a></span>
-<span id="cb2-26"><a href="#cb2-26"></a><span class="fu">set.seed</span>(<span class="dv">4321</span>)</span>
-<span id="cb2-27"><a href="#cb2-27"></a></span>
-<span id="cb2-28"><a href="#cb2-28"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb2-29"><a href="#cb2-29"></a></span>
-<span id="cb2-30"><a href="#cb2-30"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb2-31"><a href="#cb2-31"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(x), </span>
-<span id="cb2-32"><a href="#cb2-32"></a>                 <span class="at">colour =</span> <span class="st">"white"</span>,</span>
-<span id="cb2-33"><a href="#cb2-33"></a>                 <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
-<span id="cb2-34"><a href="#cb2-34"></a>  <span class="fu">theme_bw</span>()</span>
-<span id="cb2-35"><a href="#cb2-35"></a><span class="in">```</span></span>
+<span id="cb2-26"><a href="#cb2-26"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb2-27"><a href="#cb2-27"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(x), </span>
+<span id="cb2-28"><a href="#cb2-28"></a>                 <span class="at">colour =</span> <span class="st">"white"</span>,</span>
+<span id="cb2-29"><a href="#cb2-29"></a>                 <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb2-30"><a href="#cb2-30"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb2-31"><a href="#cb2-31"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

@@ -3,8 +3,6 @@
 ```{r}
 #| label: intro_setup
 #| echo: false
-#| message: false
-#| warning: false
 
 library(ggplot2)
 
@@ -17,7 +15,6 @@ See @knuth84 for additional discussion of literate programming.
 This is a test
 
 ```{r}
-#| message: false
 
 set.seed(4321)
 

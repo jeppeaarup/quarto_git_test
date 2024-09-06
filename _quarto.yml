@@ -1,6 +1,7 @@
 project:
   type: book
 
+# Structure and info options
 book:
   title: "Data Analysis for Food Science"
   date: "5.9.2024"
@@ -12,16 +13,25 @@ book:
 
 bibliography: references.bib
 
+# Global options for code execution
+execute:
+  echo: true          # Show code by default
+  warning: false      # Suppress warnings
+  error: false        # Suppress errors
+  fig-align: center   # Center figures by default
+
+# Global format options
+
 format:
   html:
     theme:
-    - cosmo
+    - default
     - style.scss
    # mainfont: serif
     
-    code-fold: show
-    code-line-numbers: true
-    code-tools: true
+    code-fold: show # show code, but be able to fold it
+    code-line-numbers: true # show code line numbers
+    code-tools: true # add code tools like "copy" and "source"
     grid: 
       sidebar-width: 250px # Max width of left sidebar (standard is 250px)
       body-width: 1000px # Max width of body (standard is 800px)

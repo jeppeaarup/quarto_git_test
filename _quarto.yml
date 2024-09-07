@@ -20,7 +20,7 @@ format:
     theme:
     - default
     - style.scss
-   # mainfont: serif
+
     lightbox: true
     crossref: 
       fig-prefix: figure # (default is "Figure")

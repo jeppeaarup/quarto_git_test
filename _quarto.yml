@@ -13,14 +13,6 @@ book:
 
 bibliography: references.bib
 
-# Global options for code execution
-execute:
-  echo: true          # Show code by default
-  warning: false      # Suppress warnings
-  error: false        # Suppress errors
-  message: false # Suppress message
-  fig-align: "center"   # Center figures by default
-
 # Global format options
 
 format:
@@ -29,7 +21,10 @@ format:
     - default
     - style.scss
    # mainfont: serif
-    
+    lightbox: true
+    crossref: 
+      fig-prefix: figure # (default is "Figure")
+
     code-fold: show # show code, but be able to fold it
     code-line-numbers: true # show code line numbers
     code-tools: true # add code tools like "copy" and "source"
@@ -40,7 +35,5 @@ format:
       gutter-width: 4em #Max width of space between grid components (standard is 1.5em)
   pdf:
     documentclass: scrreprt
-
-
 
 

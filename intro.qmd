@@ -12,10 +12,11 @@ This is a book created from markdown and executable code.
 
 See @knuth84 for additional discussion of literate programming.
 
-This is a test
+A histogram can be useful for investigating empirical distributions @fig-histogram.
 
 ```{r}
-
+#| label: fig-histogram
+#| fig-cap: This is a histogram
 set.seed(4321)
 
 x <- rnorm(100)
@@ -25,4 +26,15 @@ ggplot() +
                  colour = "white",
                  fill = "steelblue") +
   theme_bw()
+```
+
+An empirical cumulative distribution is also an effective tool @fig-ecdf.
+
+```{r}
+#| label: fig-ecdf
+#| fig-cap: This is a ecdf.
+
+
+plot(ecdf(x))
+
 ```

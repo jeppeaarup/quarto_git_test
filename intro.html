@@ -95,6 +95,9 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -216,7 +219,7 @@ div.csl-indent {
 
 <p>This is a book created from markdown and executable code.</p>
 <p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
-<p>This is a test</p>
+<p>A histogram can be useful for investigating empirical distributions <a href="#fig-histogram" class="quarto-xref">figure&nbsp;<span>1.1</span></a>.</p>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
@@ -230,10 +233,37 @@ div.csl-indent {
 <span id="cb1-8"><a href="#cb1-8"></a>                 <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
 <span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
 <div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="intro_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<div id="fig-histogram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-histogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="intro_files/figure-html/fig-histogram-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1.1: This is a histogram"><img src="intro_files/figure-html/fig-histogram-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: This is a histogram
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>An empirical cumulative distribution is also an effective tool <a href="#fig-ecdf" class="quarto-xref">figure&nbsp;<span>1.2</span></a>.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">plot</span>(<span class="fu">ecdf</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-ecdf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="intro_files/figure-html/fig-ecdf-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;1.2: This is a ecdf."><img src="intro_files/figure-html/fig-ecdf-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: This is a ecdf.
+</figcaption>
 </figure>
 </div>
 </div>
@@ -732,36 +762,81 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu"># Introduction</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="in">```{r}</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#| label: intro_setup</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#| echo: false</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb2-10"><a href="#cb2-10"></a></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="in">```</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a></span>
-<span id="cb2-13"><a href="#cb2-13"></a>This is a book created from markdown and executable code.</span>
-<span id="cb2-14"><a href="#cb2-14"></a></span>
-<span id="cb2-15"><a href="#cb2-15"></a>See @knuth84 for additional discussion of literate programming.</span>
-<span id="cb2-16"><a href="#cb2-16"></a></span>
-<span id="cb2-17"><a href="#cb2-17"></a>This is a test</span>
-<span id="cb2-18"><a href="#cb2-18"></a></span>
-<span id="cb2-21"><a href="#cb2-21"></a><span class="in">```{r}</span></span>
-<span id="cb2-22"><a href="#cb2-22"></a><span class="fu">set.seed</span>(<span class="dv">4321</span>)</span>
-<span id="cb2-23"><a href="#cb2-23"></a></span>
-<span id="cb2-24"><a href="#cb2-24"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb2-25"><a href="#cb2-25"></a></span>
-<span id="cb2-26"><a href="#cb2-26"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb2-27"><a href="#cb2-27"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(x), </span>
-<span id="cb2-28"><a href="#cb2-28"></a>                 <span class="at">colour =</span> <span class="st">"white"</span>,</span>
-<span id="cb2-29"><a href="#cb2-29"></a>                 <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
-<span id="cb2-30"><a href="#cb2-30"></a>  <span class="fu">theme_bw</span>()</span>
-<span id="cb2-31"><a href="#cb2-31"></a><span class="in">```</span></span>
+<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu"># Introduction</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="in">```{r}</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#| label: intro_setup</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">#| echo: false</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-10"><a href="#cb4-10"></a></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="in">```</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a></span>
+<span id="cb4-13"><a href="#cb4-13"></a>This is a book created from markdown and executable code.</span>
+<span id="cb4-14"><a href="#cb4-14"></a></span>
+<span id="cb4-15"><a href="#cb4-15"></a>See @knuth84 for additional discussion of literate programming.</span>
+<span id="cb4-16"><a href="#cb4-16"></a></span>
+<span id="cb4-17"><a href="#cb4-17"></a>A histogram can be useful for investigating empirical distributions @fig-histogram.</span>
+<span id="cb4-18"><a href="#cb4-18"></a></span>
+<span id="cb4-21"><a href="#cb4-21"></a><span class="in">```{r}</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="co">#| label: fig-histogram</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a><span class="co">#| fig-cap: This is a histogram</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a><span class="fu">set.seed</span>(<span class="dv">4321</span>)</span>
+<span id="cb4-25"><a href="#cb4-25"></a></span>
+<span id="cb4-26"><a href="#cb4-26"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb4-27"><a href="#cb4-27"></a></span>
+<span id="cb4-28"><a href="#cb4-28"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb4-29"><a href="#cb4-29"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(x), </span>
+<span id="cb4-30"><a href="#cb4-30"></a>                 <span class="at">colour =</span> <span class="st">"white"</span>,</span>
+<span id="cb4-31"><a href="#cb4-31"></a>                 <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb4-32"><a href="#cb4-32"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb4-33"><a href="#cb4-33"></a><span class="in">```</span></span>
+<span id="cb4-34"><a href="#cb4-34"></a></span>
+<span id="cb4-35"><a href="#cb4-35"></a>An empirical cumulative distribution is also an effective tool @fig-ecdf.</span>
+<span id="cb4-36"><a href="#cb4-36"></a></span>
+<span id="cb4-39"><a href="#cb4-39"></a><span class="in">```{r}</span></span>
+<span id="cb4-40"><a href="#cb4-40"></a><span class="co">#| label: fig-ecdf</span></span>
+<span id="cb4-41"><a href="#cb4-41"></a><span class="co">#| fig-cap: This is a ecdf.</span></span>
+<span id="cb4-42"><a href="#cb4-42"></a></span>
+<span id="cb4-43"><a href="#cb4-43"></a></span>
+<span id="cb4-44"><a href="#cb4-44"></a><span class="fu">plot</span>(<span class="fu">ecdf</span>(x))</span>
+<span id="cb4-45"><a href="#cb4-45"></a></span>
+<span id="cb4-46"><a href="#cb4-46"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom","openEffect":"zoom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

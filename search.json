@@ -14,7 +14,7 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\nThis is a test\n\n\nCode\nset.seed(4321)\n\nx &lt;- rnorm(100)\n\nggplot() +\n  geom_histogram(aes(x), \n                 colour = \"white\",\n                 fill = \"steelblue\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\nA histogram can be useful for investigating empirical distributions figure 1.1.\n\n\nCode\nset.seed(4321)\n\nx &lt;- rnorm(100)\n\nggplot() +\n  geom_histogram(aes(x), \n                 colour = \"white\",\n                 fill = \"steelblue\") +\n  theme_bw()\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 1.1: This is a histogram\n\n\n\n\n\nAn empirical cumulative distribution is also an effective tool figure 1.2.\n\n\nCode\nplot(ecdf(x))\n\n\n\n\n\n\n\n\nFigure 1.2: This is a ecdf.\n\n\n\n\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -24,7 +24,7 @@
     "href": "summary.html",
     "title": "2  Summary",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n\nCode\nggplot(data = iris,\n       aes(x = Sepal.Length, \n           y = Sepal.Width,\n           color = Species)) +\n  geom_point() +\n  stat_smooth(method = lm, \n              se = F)",
+    "text": "In summary, this book has no content whatsoever.\n\n\nCode\nggplot(data = iris,\n       aes(x = Sepal.Length, \n           y = Sepal.Width,\n           color = Species)) +\n  geom_point() +\n  stat_smooth(method = lm, \n              se = F)\n\n\n`geom_smooth()` using formula = 'y ~ x'",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
     ]
